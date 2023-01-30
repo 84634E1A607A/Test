@@ -13,7 +13,7 @@ body:
 - type: textarea
   attributes:
     label: Describe the bug
-    description: A clear and concise description of what the bug is.
+    placeholder: A clear and concise description of what the bug is.
   validations:
     required: true
 
@@ -31,6 +31,13 @@ body:
 
 - type: textarea
   attributes:
+    label: Expected behaviour
+    description: A clear and concise description of what you expected to happen, instead of what actually happened.
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
     label: Screenshots
     description: If applicable, add screenshots to help explain your problem.
   validations:
@@ -39,17 +46,21 @@ body:
 - type: textarea
   attributes:
     label: System information
-    description: |
+    description: >
       Please specify the OS version, GPU info for graphics-related issues,
       and your Thrive version. You can find GPU info in the game logs.
     placeholder: |
-      - Windows 10
-      - OpenGL ES 3.0 Renderer: GeForce GTX 1080 Ti/PCIe/SSE2
-      - Thrive 0.6.0
+      - OS: Windows 10
+      - Graphics card: OpenGL ES 3.0 Renderer: GeForce GTX 1080 Ti/PCIe/SSE2
+      - Thrive: 0.6.0
+    value: |
+      - OS:
+      - Graphics card:
+      - Thrive:
   validations:
     required: true
 
-- type: input
+- type: textarea
   attributes:
     label: Game Logs
     description: |
